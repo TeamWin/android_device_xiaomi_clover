@@ -6,12 +6,12 @@
 /boot           emmc       /dev/block/bootdevice/by-name/boot                                     flags=display="Boot"
 /misc           emmc       /dev/block/bootdevice/by-name/misc                                     flags=display="Misc"
 /recovery       emmc       /dev/block/bootdevice/by-name/recovery                                 flags=display="Recovery";backup=1
-/cust           ext4       /dev/block/bootdevice/by-name/cust
+/cust           ext4       /dev/block/bootdevice/by-name/cust                                     flags=display="Cust"
 /cache          ext4       /dev/block/bootdevice/by-name/cache                                    flags=display="Cache"
 /data           ext4       /dev/block/bootdevice/by-name/userdata                                 flags=encryptable=footer;length=-16384
 /system         ext4       /dev/block/bootdevice/by-name/system
 /vendor         ext4       /dev/block/bootdevice/by-name/vendor                                   flags=display="Vendor";backup=1;wipeingui
-/persist        ext4       /dev/block/bootdevice/by-name/persist
+/persist        ext4       /dev/block/bootdevice/by-name/persist                                  flags=display="Persist"
 /system_image   emmc   	   /dev/block/bootdevice/by-name/system                                   flags=display="System Image";backup=1;flashimg=1
 /vendor_image   emmc       /dev/block/bootdevice/by-name/vendor			                          flags=display="Vendor Image";backup=1;flashimg=1
 /persist_image  emmc       /dev/block/bootdevice/by-name/persist                                  flags=display="Persist Image";backup=1;flashimg=1
